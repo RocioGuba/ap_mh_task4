@@ -1,0 +1,360 @@
+*{
+    margin:0;
+  padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/fondo2.png);
+    background-size: cover;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header h1{
+    color: aliceblue;
+    font-size: 3rem;
+    flex-grow: 1;
+    text-align: center; 
+}
+
+header img{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.links{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.links img{
+    max-width:100%;
+    height: 100%;
+}
+
+.links li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    }
+    
+    .links li :hover{
+        font-size: 33px;
+        transform: scale(1.3); 
+        }
+    .links li :active{
+        background: 30px;
+    }
+    
+    .links h2{
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .links li :hover h2{
+        font-size: 33px;
+    }
+
+    footer{
+        margin-top:50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer p{
+        color: aliceblue;
+        font-size: 1rem;
+        flex-grow: 3;
+        text-align: center; 
+    }
+
+/*nav del resto de los HTML*/
+
+nav{
+    display: flex;
+    gap: 1rem;
+    padding:0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav a{
+    width: 11rem;
+    text-align: center;
+    text-decoration: none;
+    height: 3.5rem;
+    padding: 0.1rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+a:hover{
+    transform: scale(1.0) rotate(40deg);
+    color: rgb(255, 255, 255);
+
+}
+
+.active{
+    color: white;
+}
+
+/* Etiqueta para la mayoria de los HTML*/
+section{
+    font-size: x-large;
+    text-align: center;
+    text-decoration:underline;
+    margin-top: 5%;
+}
+
+
+/*CSS del HTML de About*/
+
+.section-about{
+    color: aliceblue;
+    font-size: 4vw;
+}
+
+.div-about{
+    color: aliceblue;
+}
+
+.div-about h3{
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.div-about p{
+    font-size: 2vw;
+}
+
+/*CSS del HTML de contact*/
+.contact{
+    color: aliceblue;
+   font-size: 4vw;
+    padding-bottom: 5%;
+}
+.art-contact{
+    color: aliceblue;
+    font-size: 4vw;
+    text-align: center;
+}
+/*CSS del HTML de Game Information */
+
+.info1 h2{
+   color: antiquewhite;
+   padding: 2% 5%;
+}
+
+.info1 p{
+    text-decoration: underline;
+    color: antiquewhite;
+    padding-left: 5%;
+}
+
+.section-tabla{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin: 5% 20%;
+}
+thead{
+    color: white;
+}
+td, th{
+    color: aliceblue;
+    border: 3px solid #1cc2baa4;
+    padding: 10px 60px;
+}
+
+
+.art-gameinfo{
+    color: aliceblue;
+    margin: 0 3%;
+}
+
+.div-fa p{
+    margin-top: 3%;
+}
+.div-p{
+    margin-top: 2%;
+}
+.div-pe{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+
+}
+/*CSS para el HTML home*/
+
+.home{
+    color: aliceblue;
+    margin: 5% 0;
+    text-align: center;
+}
+
+.home h3{
+    color: rgb(82, 161, 135);
+    font-size:2rem;
+    padding: 2%;
+}
+
+.home p{
+    font-size:2rem ;
+}
+
+/*CSS para el HTML de rules*/
+
+.titulo-rules{
+    color: aliceblue;
+text-align: center;
+    margin-top:5%;
+}
+
+.main-rules{
+    color: aliceblue;
+    padding: 5% 10%;
+}
+
+.main-rules h3{
+    padding-bottom: 2%;
+}
+
+.main-rules span{
+    padding-left: 5%;
+}
+
+.rulessport{
+    font-size: 2vw;
+}
+
+.section-rules{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.section-rules h3{
+padding-bottom: 2%;
+}
+
+.section-rules div{
+    margin-left: 20%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+}
+
+.section-rules li{
+    padding-bottom: 2%;
+}
+
+.section-rules ol >li> ol{
+ list-style-type: lower-latin;
+}
+
+.article-rules{
+    color: aliceblue;
+}
+
+.article-rules h1{
+    padding-bottom : 2%;
+}
+
+.article-rules h2{
+    padding-bottom : 2%;
+}
+
+.article-rules h2 {
+    padding-left: 5%;
+}
+
+/*CSS de formulario*/
+
+.formulariom{
+    background: linear-gradient(rgb(243, 89, 18), rgb(255, 213, 77));
+}
+.sub-form{
+    color: aliceblue;
+    text-align: center;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form fieldset legend{
+    color: black;
+}
+
+form label, form legend{
+    color: aliceblue;
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.inputr{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.question{
+    color: rgb(38, 118, 138);
+    font-size: 2vw;
+    padding: 2px 2px 2px 2px;
+}
+
+fieldset{
+    border: none;
+}
+
+.enviar{
+    width: 20%;
+    padding: 10px 10px ;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;  /* all aplica a todo*/
+    cursor: pointer;
+}
+
+
+/*media querie*/
+@media screen and (max-width:480px) {
+    h1 h2 h3 h4 label{
+        text-align: center;
+        font-size: medium;
+    }
+    nav{
+        position: static;
+    }
+    .links, .tabla, .home {
+        width: auto;
+    }
+    
+    .lista-diferenciales{
+        width: 100%;
+    }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="formulariom">
+    <header>
+      <h1>Mighty Ducks Hockey League</h1>
+    </header>
+
+    <main>
+      <h1 class="sub-form">Registration Form</h1>
+
+      <form>
+        <label for="firstname">Player's First Name: </label>
+        <input
+          type="text"
+          id="firstname"
+          placeholder="algun nombre"
+          required
+          class="inputr"
+        />
+
+        <label for="lastname">Last Name: </label>
+        <input
+          type="text"
+          id="lastname"
+          placeholder="algun apellido"
+          required
+          class="inputr"
+        />
+
+        <label for="street">Street Address:</label>
+        <input
+          type="text"
+          id="street"
+          placeholder="calle"
+          required
+          class="inputr"
+        />
+
+        <label for="city"> City: </label>
+        <input
+          type="text"
+          id="city"
+          placeholder="city"
+          required
+          class="inputr"
+        />
+
+        <label for="code">Zip Code</label>
+        <input
+          type="number"
+          max="1000"
+          min="1"
+          id="code"
+          placeholder="0000"
+          required
+          class="inputr"
+        />
+
+        <label for="birth">Birth Date(mm/dd/yyyy):</label>
+        <input type="date" id="birth" class="inputr" />
+
+        <fieldset>
+          <legend>Gender:</legend>
+          <label for="checkbox-female">
+            <input
+              type="radio"
+              name="gender"
+              value="Female"
+              id="checkbox-female"
+            />
+            Female
+          </label>
+
+          <label for="checkbox-male">
+            <input
+              type="radio"
+              name="gender"
+              value="Male"
+              id="checkbox-male"
+            />Male
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Grade:</legend>
+
+          <label>
+            <input type="radio" name="school" value="school" />
+            Pre-School
+          </label>
+          <label>
+            <input type="radio" name="it" value="1st" />
+            1st
+          </label>
+          <label>
+            <input type="radio" name="it" value="2nd" />
+            2nd
+          </label>
+          <label>
+            <input type="radio" name="it" value="3rd" />
+            3rd
+          </label>
+          <label>
+            <input type="radio" name="it" value="4th" />
+            4th
+          </label>
+          <label>
+            <input type="radio" name="it" value="5th" />
+            5th
+          </label>
+        </fieldset>
+
+        <h3 class="question">Which elementary school do you live near?</h3>
+
+        <fieldset>
+          <legend>Closest School:</legend>
+
+          <label>
+            AJ Katzenmaier
+            <input type="radio" name="citys" value="city1" />
+          </label>
+          <label>
+            Greenbay
+            <input type="radio" name="citys" value="city2" />
+          </label>
+          <label>
+            Howard A Yeager
+            <input type="radio" name="citys" value="city3" />
+          </label>
+          <label>
+            Marjorie p Hart
+            <input type="radio" name="citys" value="city4" />
+          </label>
+          <label>
+            North Elementary
+            <input type="radio" name="citys" value="city5" />
+          </label>
+          <label>
+            South Elementary
+            <input type="radio" name="citys" value="city6" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <h3 class="question">
+            What position(s) do you normally play? (check all that apply)
+          </h3>
+
+          <label>
+            <input type="radio" name="position" value="Forward" />
+            Forward
+          </label>
+          <label>
+            <input type="radio" name="position" value="Defense" />
+            Defense
+          </label>
+          <label>
+            <input type="radio" name="position" value="Midfield" />
+            Midfield
+          </label>
+          <label>
+            <input type="radio" name="position" value="Goalkeeper" />
+            Goalkeeper
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <h3 class="question">Uniform Size</h3>
+          <label>
+            <input type="radio" name="size" value="Youth Small" />
+            Youth Small
+          </label>
+          <label>
+            <input type="radio" name="size" value="Youth Medium" />
+            Youth Medium
+          </label>
+          <label>
+            <input type="radio" name="size" value="Youth Large" />
+            Youth Large
+          </label>
+          <label>
+            <input type="radio" name="size" value="Small" />
+            Small
+          </label>
+          <label>
+            <input type="radio" name="size" value="Medium" />
+            Medium
+          </label>
+          <label>
+            <input type="radio" name="size" value="Large" />
+            Large
+          </label>
+          <label>
+            <input type="radio" name="size" value="Extra-Large" />
+            Extra-Large
+          </label>
+        </fieldset>
+
+        <h3 class="question">Permission to Play</h3>
+        <p>
+          I, the parent or gardian of the minor registrant, agree that the
+          registrant and I will abide by all the rules of the Mighhty Ducks
+          Hockey League (MDHL). In recognizing the possibility of physical
+          injury associated with hockey and in consideration for the "League"
+          accepting the registrant for its hockey programs and activities, I
+          hereby release, discharge, and/or otherwise indemnify MDHL, their
+          employees and associated personnel and volunteers, including the
+          facilities used for practices and game, against any claim by or on
+          behalf of the registrant as a result of the registrant's participation
+          in the programand/orbeing transported to or from MDHL sponsored
+          activities, which transportation. By signing below, I here by agree
+          and authorize the above. In addition, by signing below, also
+          acknowledge that I have read the cancellation policy and agree to its
+          terms.
+        </p>
+
+        <fieldset>
+          <label>
+            Parent/GuardianSignature:
+            <input required type="text" name="firma" placeholder="firma" />
+          </label>
+
+          <label>
+            Date:
+            <input required type="date" name="fecha" />
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Enviar formulario" class="enviar" />
+      </form>
+    </main>
+  </body>
+</html>
